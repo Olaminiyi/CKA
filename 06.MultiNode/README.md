@@ -10,7 +10,7 @@ brew install kind
 
 I have Kubectl already installed on my system. If you don't have follow this [link](https://kubernetes.io/docs/tasks/tools/) to install it. We use it to interract with the kind cluster
 
-Below domains and all of its sub-domains are allowed to be referred in the exam
+Below domains and all of its sub-domains are allowed to be referred in the exam...
 
 - https://kubernetes.io/docs
 - https://kubernetes.io/blog/
