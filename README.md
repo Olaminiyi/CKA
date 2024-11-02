@@ -1,2 +1,3 @@
 # CKA
 
+Each lesson has its own readme.md file for explanation...
