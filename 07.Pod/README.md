@@ -87,3 +87,23 @@ To save it in a file we just need to forward it into a file.
 kubectl run nginx --image=nginx --dry-run=client  -o yaml > pod-new.yaml
 ```
 This will create a new pod-new yaml file in the working directory and you can change what you don't want in the configuration.
+
+Labelling is good when you have a lot of pod or containers. You may want to group them for easy identification. To get the label for a pod use this command.
+```
+kubectl get pods nginx-pod --show-labels
+```
+![alt text](<images/Screenshot 2024-11-02 at 17.13.14.png>)
+
+It will show all labels for that pod 
+
+To get more information of the Pod like the IP and the node is running on, you can use this command;
+```
+kubectl get pods -o wide
+```
+![alt text](<images/Screenshot 2024-11-02 at 17.15.57.png>)
+
+The -o wide can be use to get more information for node as well
+```
+kubectl get nodes -o wide
+```
+![alt text](<images/Screenshot 2024-11-02 at 17.18.32.png>)
