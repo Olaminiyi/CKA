@@ -44,7 +44,7 @@ kubectl get pods
 
 ![alt text](<images/Screenshot 2024-11-02 at 16.38.54.png>)
 
-The status shows imagePullBackoff which is showing the could not be pull due to the error we introduced into the name of the image.
+The status shows `imagePullBackoff` which is showing the could not be pull due to the error we introduced into the name of the image.
 
 To troubleshoot it, run this command
 ```
@@ -53,7 +53,7 @@ kubectl describe pod nginx-pod
 
 ![alt text](<images/Screenshot 2024-11-02 at 16.42.29.png>)
 
-> [!Error]
+> [!NOTE]
 > pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
 
 We can directly update the content of the pod on the terminal using this command.
