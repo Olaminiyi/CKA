@@ -77,9 +77,9 @@ kubectl run nginx --image=nginx --dry-run=client
 ![alt text](<images/Screenshot 2024-11-02 at 17.00.48.png>)
 
 To show the output on the terminal in a yaml syntax we need to add `o yaml` to the end of the command.
-
+```
 kubectl run nginx --image=nginx --dry-run=client  -o yaml
-
+```
 ![alt text](<images/Screenshot 2024-11-02 at 17.03.35.png>)
 
 To save it in a file we just need to forward it into a file.
