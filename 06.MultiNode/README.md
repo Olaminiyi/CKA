@@ -89,3 +89,7 @@ to switch to the first clustet use this command
 kubectl config use-context kind-cka-cluster1
 ```
 ![alt text](<images/Screenshot 2024-10-31 at 17.28.21.png>)
+
+```
+kind delete cluster --name cka-cluster2
+```
