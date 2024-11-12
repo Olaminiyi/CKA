@@ -2,14 +2,14 @@
 
 In Kubernetes, a **namespace** is a way to divide cluster resources between multiple users or teams, essentially providing a "virtual cluster" within the physical Kubernetes cluster. Namespaces enable you to organize, manage, and isolate resources, making it easier to handle large clusters with many users or projects.
 
-Key Points About Kubernetes Namespaces:
-Logical Partitioning: Namespaces logically partition the cluster so that different teams or projects can have isolated environments within the same physical cluster. Each namespace has its own set of resources, such as pods, services, and deployments, separate from other namespaces.
+**Key Points About Kubernetes Namespaces:**
+- Logical Partitioning: Namespaces logically partition the cluster so that different teams or projects can have isolated environments within the same physical cluster. Each namespace has its own set of resources, such as pods, services, and deployments, separate from other namespaces.
 
-Isolation and Access Control: Namespaces provide isolation for resources, helping prevent conflicts (e.g., two resources with the same name) and allowing control over who can access which resources. This isolation can be enhanced with Role-Based Access Control (RBAC), allowing you to define different access permissions for each namespace.
+- Isolation and Access Control: Namespaces provide isolation for resources, helping prevent conflicts (e.g., two resources with the same name) and allowing control over who can access which resources. This isolation can be enhanced with Role-Based Access Control (RBAC), allowing you to define different access permissions for each namespace.
 
-Resource Quotas: You can assign specific resource limits (e.g., CPU, memory) to namespaces using resource quotas. This allows you to manage and control the amount of resources each team or project can use, preventing any single namespace from consuming excessive cluster resources.
+- Resource Quotas: You can assign specific resource limits (e.g., CPU, memory) to namespaces using resource quotas. This allows you to manage and control the amount of resources each team or project can use, preventing any single namespace from consuming excessive cluster resources.
 
-Network Policies: Namespaces can be configured with network policies to restrict communication between resources in different namespaces, further enhancing isolation and security.
+- Network Policies: Namespaces can be configured with network policies to restrict communication between resources in different namespaces, further enhancing isolation and security.
 
 ## When to Use Namespaces
 
