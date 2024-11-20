@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2024-11-18T11:49:27Z"
+  labels:
+    run: nginx
+  name: nginx
+  namespace: default
+  resourceVersion: "129376"
+  uid: d0f7aab5-10bc-4ec1-bcc1-edd881e539a9
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+  nodeName:  cka-cluster3-worker 
+   
+ 
