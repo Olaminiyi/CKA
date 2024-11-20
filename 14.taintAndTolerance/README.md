@@ -123,8 +123,8 @@ k describe po nginx
 We can see that the pod has been schedule now on `cka-cluster3-worker` beacuse we have remove the **Taint** on the node.
 
 > [!Note]
-> control plane has been tainted by default and it cannot allow any customized pods to be schedule on it. only the **System component** can be schedule on the control plane.
-> When a `Node` is tainted it only restricts or stop pods without its tolerance from  scheduling on the node> That does not mean the pods can not be schedule on other nodes. To avoid this we add more features by using **selectors** with the help of labels.
+> Control plane has been tainted by default and it cannot allow any customized pods to be schedule on it. only the **System component** can be schedule on the control plane.
+> When a `Node` is tainted it only restricts or stop pods without its tolerance from  scheduling on the node. That does not mean the pods can not be schedule on other nodes. To avoid this we add more features by using **selectors** with the help of labels.
 
 With the help of the selectors and labels we let the pod know which node it can be schedule.
 
