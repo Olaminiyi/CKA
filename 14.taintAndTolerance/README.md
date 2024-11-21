@@ -169,3 +169,7 @@ k get pod -o wide
 We can see that the pod is running now.
 
 So basically, the difference between **Taint/Toleration** and **nodeSelector** is that the former restrict which pod can be schedule on it while the later chose which node it want to be schedule on. The limitation to **nodeSelector** is that we can not use some expression or logic with and we can not add more condition to it so that it can schedule on one or more nodes. We use some concept in kubernetes to tackle that which is **Node Affinity**.
+
+
+ 
+  
