@@ -1,6 +1,6 @@
 # Kubernetes Request and Limit
 
-In Kubernetes, **requests and limits** are part of resource management, used to control how much `CPU` and `memory (RAM)` a container can use. These settings help ensure fair resource allocation and prevent any single container from overusing the node's resources, which could affect other workloads.
+In Kubernetes, **requests and limits** are part of resource management, used to control how much `CPU` and `memory (RAM)` a container can use. These settings help ensure fair resource allocation and prevent any single container from overusing the node's resources, which could affect other workloads
 
 ![alt text](<images/Screenshot 2024-11-22 at 11.37.42.png>)
 
