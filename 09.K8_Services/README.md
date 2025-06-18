@@ -23,7 +23,7 @@ External Request (NodeIP:NodePort) -> Any Node in the cluster -> ClusterIP:Port 
 ```
 Let create a NodePort service for practical. Create a nodeport.yaml in your working directory
 
-You can use the following command to check the name of your pod and get the label info
+You can use the following command to check the name of your pod and get the label info.
 
 ```
 kubectl get po
