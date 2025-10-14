@@ -1,21 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
-    app: deploy/nginx-new
-  name: deploy/nginx-new
+    app: deploy/new-deploy
+  name: deploy/new-deploy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: deploy/nginx-new
+      app: deploy/new-deploy
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: deploy/nginx-new
+        app: deploy/new-deploy
     spec:
       containers:
       - image: nginx
