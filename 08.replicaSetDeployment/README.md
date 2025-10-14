@@ -82,7 +82,7 @@ Running this will throw an error that `resources mapping not found for  name ngi
 kubectl explain rc
 ```
 
-You will out that ReplicaSet belongs to a **Group** `apps` before **VERSION** `v1`. so we need to update the `apiVersion` to reflect the `group`
+You will find out that ReplicaSet belongs to a **Group** `apps` before **VERSION** `v1`. so we need to update the `apiVersion` to reflect the `group`
 ```
 apiVersion:  apps/v1
 kind:  ReplicaSet
