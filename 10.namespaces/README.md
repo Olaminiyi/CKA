@@ -79,7 +79,7 @@ We already have nginx-dep on our default ns and now we have nginx-test on our de
 
 ![alt text](<images/Screenshot 2024-11-11 at 13.26.59.png>)
 
-We want to see if the pod on the demo ns can reac the one on the default ns.
+We want to see if the pod on the demo ns can reach the one on the default ns.
 
 ```
 k get pod -n demo

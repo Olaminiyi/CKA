@@ -146,7 +146,7 @@ kubectl scale --replicas=10 rs nginx-rs
 
 As a user, we create **Deployment** and it will in turn create ReplicaSet While ReplicaSet will manage the pods. Deployment will manage the ReplicaSet, it will create additional functionality.
 
-If we are running an application or a collection of pods on version 1.1 and we want to update it to 1.2 version, if we try to upgrate it using `ReplicaSet` it will upgrade everything at the same time thereby leading to a `downtime` which we cannot afford in `life environment`. But if we run it using `Deployment` it will run it and make changes in a rolling update version. While one pod is benn updated it will forward all the traffic to the other ones and it can also spin up another pod to manage the load. When the particular pod that is been updated ready it will be added to the `ReplicaSet`.
+If we are running an application or a collection of pods on version 1.1 and we want to update it to 1.2 version, if we try to upgrate it using `ReplicaSet` it will upgrade everything at the same time thereby leading to a `downtime` which we cannot afford in `life environment`. But if we run it using `Deployment` it will run it and make changes in a rolling update version. While one pod is being updated it will forward all the traffic to the other ones and it can also spin up another pod to manage the load. When the particular pod that is been updated ready it will be added to the `ReplicaSet`.
 
 ![alt text](<images/Screenshot 2024-11-04 at 13.26.55.png>)
 

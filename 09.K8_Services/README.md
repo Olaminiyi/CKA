@@ -11,7 +11,7 @@ A **NodePort** is a way to expose a Kubernetes service on each Node’s IP addre
 Kubernetes automatically selects a port (or you can specify one) from the range 30000–32767 and opens it on all nodes in your cluster.
 This NodePort maps to a specific port in the service’s ClusterIP, which is how Kubernetes routes traffic inside the cluster.
 
-In a simpler term, we will have a NodePort that we can select or be selected for by the kubernetes (30000–32767) which the outside service or user can connect to to interact with our application. Then, there is a port that we can refer to as a `port` or `ClusterIP:Port`that will serve as a link between the `NodePort` and the port which is refer to as `targetPort` of the application we want to expose. The inetermediate port i refer to as `ClusterIP:Port` will be a point of connection between our `targetPort` and any other application within the cluster that want to communicate with it.
+In a simpler term, we will have a NodePort that we can select or be selected for by the kubernetes (30000–32767) which the outside service or user can connect to to interact with our application. Then, there is a port that we can refer to as a `port` or `ClusterIP:Port`that will serve as a link between the `NodePort` and the port which is refer to as `targetPort` of the application we want to expose. The intermediate port is refer to as `ClusterIP:Port`. It will be a point of connection between our `targetPort` and any other application within the cluster that want to communicate with it.
 
 ![alt text](<images/Screenshot 2024-11-06 at 16.17.40.png>)
 
@@ -53,7 +53,7 @@ spec:
     env:  demo 
 ```
 ```
-bubectl apply -f nodeport.yaml
+kubectl apply -f nodeport.yaml
 ```
 ```
 kubectl get svc
