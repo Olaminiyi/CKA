@@ -72,10 +72,10 @@ k describe po nginx
 ```
 ![alt text](<image/Screenshot 2024-11-16 at 17.11.48.png>)
 
-We can see that **Node** is `None` and the **Status** is `pending` which shows something is running with the scheduler. If we move the kube-scheduler file back to the directory which is the current directory signifying by the dot `.`.
+We can see that **Node** is `None` and the **Status** is `pending` which shows something is wrong with the scheduler. If we move the kube-scheduler file back to the directory which is the current directory signifying by the dot `.`.
 
 ```
-mv /tmp/kube-scheduler .
+mv /tmp/kube-scheduler.yaml .
 ```
 ```
 ls -lrt
