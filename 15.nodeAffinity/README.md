@@ -1,4 +1,4 @@
-# Node Affinity
+# Node Affinity.
 
 In Kubernetes, **Node Affinity** is a mechanism that controls which nodes a pod can or should be scheduled on, based on specific rules. It allows you to express constraints for pod scheduling in a more flexible and expressive way than basic nodeSelector.
 
