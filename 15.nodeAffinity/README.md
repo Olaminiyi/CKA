@@ -191,7 +191,7 @@ Let give one of the nodes a label of `disktype`
 ```
 k label node cka-cluster3-worker disktype=
 ```
-``
+```
 k get nodes --show-labels
 ```
 
